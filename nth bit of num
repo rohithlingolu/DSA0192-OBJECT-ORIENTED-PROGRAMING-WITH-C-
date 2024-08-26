@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num, bitNum;
+    cout << "Enter Number: ";
+    cin >> num;
+    cout << "Enter bit number you wish to set: ";
+    cin >> bitNum;
+
+    if (bitNum >= 0 && bitNum < 8 * sizeof(int)) {
+        num |= (1 << bitNum);
+        cout << "Bit set Successfully\n";
+        cout << "Answer: " << num << endl;
+    } else {
+        cout << "Invalid bit number." << endl;
+    }
+
+    return 0;
+}
