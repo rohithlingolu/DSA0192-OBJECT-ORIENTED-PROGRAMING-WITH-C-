@@ -1,0 +1,12 @@
+#include<iostream>
+using namespace std;
+int main(){
+	int n;
+	cout<<"Enter an integer:";
+	cin>>n;
+	if(n%2==0)
+	cout<<n<<"iseven";
+	else
+	cout<<n<<"isodd";
+	return 0;
+}
